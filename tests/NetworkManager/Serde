@@ -1,0 +1,33 @@
+interfaces:
+- name:
+  type:
+  state:
+  ipv4
+    address:
+    - ip:
+      prefix-length
+      enabled:
+  link-aggregation:
+    mode:
+    options:
+      mi imon:
+    port:
+
+#[serde(try_from = "NumbersAsString")]
+
+#[serde(
+    skip_serializing_if = "Options:: is_none",
+    rename = "port"
+    alias = "ports"
+)]
+
+#[serde(
+     skip_serializing_if = "Option:: is_none")
+     default,
+     deserialize_with = "crate::deserializer::option_u64_or_string"
+
+pub enum BondMode { 
+    #[serde(rename = "balance-rr")]
+    /// Deserialize and serialize from/to 'balance-rr'.
+    /// You can use integer 0 for deserializing to this mode.
+    RoundRobin.

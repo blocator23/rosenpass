@@ -1,0 +1,27 @@
+NetworkManager.service - Network NetworkManager
+Loaded: loaded ("directory"; ;preset:)
+Drop-In: "directory"
+Active: "state" "date" 
+Docs: man:
+Main PID: 
+Tasks:
+Memory:
+CPU:
+CGroup:
+
+Enthernet ""
+ip4 ""
+inet4"
+route4 ""
+route4 default via
+route6
+inet4
+inet6
+
+DNs configuration: 
+        servers:
+        domains:
+        interface:
+
+        servers:
+        interface:
